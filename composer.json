@@ -1,0 +1,17 @@
+{
+    "name": "cube-php/ui",
+    "description": "php cube ui vite, vue & tailwindcss setup",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "CubePhp\\Ui\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Damilola",
+            "email": "damilolaofficial@gmail.com"
+        }
+    ],
+    "require": {}
+}
