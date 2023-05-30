@@ -16,21 +16,12 @@
       "email": "damilolaofficial@gmail.com"
     }
   ],
-  "require": {
-    "brainex/php-cube-core": "@dev"
-  },
   "extra": {
     "commands": [
       "Cube\\Ui\\UiCommand"
     ]
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "/Users/salawuoluwadamilola/Projects/php-cube-core",
-      "options": {
-        "symlink": true
-      }
-    }
-  ]
+  "require": {
+    "brainex/php-cube-core": "^0.1.6"
+  }
 }
