@@ -1,17 +1,36 @@
 {
-    "name": "cube-php/ui",
-    "description": "php cube ui vite, vue & tailwindcss setup",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "CubePhp\\Ui\\": "src/"
-        }
+  "name": "cube-php/ui",
+  "description": "php cube ui vite, vue & tailwindcss setup",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Cube\\Ui\\": "src/"
     },
-    "authors": [
-        {
-            "name": "Damilola",
-            "email": "damilolaofficial@gmail.com"
-        }
-    ],
-    "require": {}
+    "files": [
+      "src/functions/vite.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Damilola",
+      "email": "damilolaofficial@gmail.com"
+    }
+  ],
+  "require": {
+    "brainex/php-cube-core": "@dev"
+  },
+  "extra": {
+    "commands": [
+      "Cube\\Ui\\UiCommand"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "/Users/salawuoluwadamilola/Projects/php-cube-core",
+      "options": {
+        "symlink": true
+      }
+    }
+  ]
 }
