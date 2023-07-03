@@ -8,7 +8,17 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(envConfigMode, "");
 
   return {
-    plugins: [vue(), liveReload(["app/views/**/*.twig"])],
+    plugins: [
+      liveReload(["app/views/**/*.twig"]),
+      vue({
+        template: {
+          transformAssetUrls: {
+            base: null,
+            includeAbsolute: false,
+          },
+        },
+      }),
+    ],
     build: {
       minify: true,
       outDir: "webroot/dist",
